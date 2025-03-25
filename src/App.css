@@ -1,0 +1,146 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.todo-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+
+.todo-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+
+.todo-input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.todo-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.todo-add-button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.todo-add-button:hover {
+  background: #218838;
+}
+
+
+.todo-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.todo-filters button {
+  background: #e0e0e0;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-filters button.active-filter {
+  background: #007bff;
+  color: white;
+}
+
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+.todo-item:hover {
+  background: #ececec;
+}
+
+
+.completed-task {
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+.todo-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.todo-edit-button,
+.todo-delete-button,
+.todo-complete-button,
+.todo-save-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.todo-edit-button:hover {
+  color: #ffc107;
+}
+
+.todo-complete-button:hover {
+  color: #28a745;
+}
+
+.todo-delete-button:hover {
+  color: #dc3545;
+}
+
+.todo-save-button:hover {
+  color: #17a2b8;
+}
+
+
+.todo-edit-input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
